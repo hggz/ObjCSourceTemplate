@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CMain.h"
+#import "CppMmClass.h"
+#import "SwiftMClass.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Hello, From ObjC Land");
+        cmain();
+        [CppMmClass cppMain];
+        [SwiftMClass swiftMain];
     }
     return 0;
 }

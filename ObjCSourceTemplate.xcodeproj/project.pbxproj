@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9007925E23FF1DDE0098D67C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007925D23FF1DDE0098D67C /* main.m */; };
+		9007926923FF1EA50098D67C /* CMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 9007926723FF1EA40098D67C /* CMain.c */; };
+		9007926D23FF1EC00098D67C /* CPPMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9007926C23FF1EC00098D67C /* CPPMain.cpp */; };
+		9007927323FF1F120098D67C /* CppWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9007926F23FF1F110098D67C /* CppWrapper.mm */; };
+		9007927423FF1F120098D67C /* CppMmClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9007927023FF1F110098D67C /* CppMmClass.mm */; };
+		9007927823FF1F540098D67C /* SwiftObjcWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007927723FF1F540098D67C /* SwiftObjcWrapper.swift */; };
+		9007927B23FF1F720098D67C /* SwiftMClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007927923FF1F720098D67C /* SwiftMClass.m */; };
+		9007927D23FF1F7B0098D67C /* SwiftMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9007927C23FF1F7B0098D67C /* SwiftMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,19 @@
 /* Begin PBXFileReference section */
 		9007925A23FF1DDE0098D67C /* ObjCSourceTemplate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCSourceTemplate; sourceTree = BUILT_PRODUCTS_DIR; };
 		9007925D23FF1DDE0098D67C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9007926723FF1EA40098D67C /* CMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CMain.c; sourceTree = "<group>"; };
+		9007926823FF1EA40098D67C /* CMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMain.h; sourceTree = "<group>"; };
+		9007926A23FF1EC00098D67C /* CPPMain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPPMain.hpp; sourceTree = "<group>"; };
+		9007926C23FF1EC00098D67C /* CPPMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPMain.cpp; sourceTree = "<group>"; };
+		9007926F23FF1F110098D67C /* CppWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppWrapper.mm; sourceTree = "<group>"; };
+		9007927023FF1F110098D67C /* CppMmClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CppMmClass.mm; sourceTree = "<group>"; };
+		9007927123FF1F120098D67C /* CppWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppWrapper.h; sourceTree = "<group>"; };
+		9007927223FF1F120098D67C /* CppMmClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppMmClass.h; sourceTree = "<group>"; };
+		9007927623FF1F530098D67C /* ObjCSourceTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCSourceTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		9007927723FF1F540098D67C /* SwiftObjcWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftObjcWrapper.swift; sourceTree = "<group>"; };
+		9007927923FF1F720098D67C /* SwiftMClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftMClass.m; sourceTree = "<group>"; };
+		9007927A23FF1F720098D67C /* SwiftMClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftMClass.h; sourceTree = "<group>"; };
+		9007927C23FF1F7B0098D67C /* SwiftMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +77,62 @@
 		9007925C23FF1DDE0098D67C /* ObjCSourceTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9007926623FF1E650098D67C /* C */,
+				9007926423FF1E570098D67C /* Cpp */,
+				9007926523FF1E5F0098D67C /* Swift */,
 				9007925D23FF1DDE0098D67C /* main.m */,
 			);
 			path = ObjCSourceTemplate;
+			sourceTree = "<group>";
+		};
+		9007926423FF1E570098D67C /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				9007926E23FF1F020098D67C /* ObjCCppWrapper */,
+				9007926C23FF1EC00098D67C /* CPPMain.cpp */,
+				9007926A23FF1EC00098D67C /* CPPMain.hpp */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		9007926523FF1E5F0098D67C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				9007927C23FF1F7B0098D67C /* SwiftMain.swift */,
+				9007927523FF1F260098D67C /* ObjCSwiftWrapper */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		9007926623FF1E650098D67C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				9007926723FF1EA40098D67C /* CMain.c */,
+				9007926823FF1EA40098D67C /* CMain.h */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		9007926E23FF1F020098D67C /* ObjCCppWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9007927223FF1F120098D67C /* CppMmClass.h */,
+				9007927023FF1F110098D67C /* CppMmClass.mm */,
+				9007927123FF1F120098D67C /* CppWrapper.h */,
+				9007926F23FF1F110098D67C /* CppWrapper.mm */,
+			);
+			path = ObjCCppWrapper;
+			sourceTree = "<group>";
+		};
+		9007927523FF1F260098D67C /* ObjCSwiftWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9007927A23FF1F720098D67C /* SwiftMClass.h */,
+				9007927923FF1F720098D67C /* SwiftMClass.m */,
+				9007927723FF1F540098D67C /* SwiftObjcWrapper.swift */,
+				9007927623FF1F530098D67C /* ObjCSourceTemplate-Bridging-Header.h */,
+			);
+			path = ObjCSwiftWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +166,7 @@
 				TargetAttributes = {
 					9007925923FF1DDE0098D67C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -119,7 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9007926D23FF1EC00098D67C /* CPPMain.cpp in Sources */,
+				9007927323FF1F120098D67C /* CppWrapper.mm in Sources */,
+				9007926923FF1EA50098D67C /* CMain.c in Sources */,
+				9007927823FF1F540098D67C /* SwiftObjcWrapper.swift in Sources */,
+				9007927D23FF1F7B0098D67C /* SwiftMain.swift in Sources */,
 				9007925E23FF1DDE0098D67C /* main.m in Sources */,
+				9007927B23FF1F720098D67C /* SwiftMClass.m in Sources */,
+				9007927423FF1F120098D67C /* CppMmClass.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,16 +319,33 @@
 		9007926223FF1DDE0098D67C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCSourceTemplate/Swift/ObjCSwiftWrapper/ObjCSourceTemplate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		9007926323FF1DDE0098D67C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCSourceTemplate/Swift/ObjCSwiftWrapper/ObjCSourceTemplate-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
